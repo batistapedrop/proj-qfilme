@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <title>q filme?</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Ubuntu&family=Work+Sans:wght@300;400&display=swap');
+      </style>
+</head>
+
+<body>
+    <header>
+        <div class="wrapper"> <h1>q filme?</h1> 
+            <nav>
+                <ul>
+                    <a href="https://linktr.ee/batistapedrop">DEV</a>
+                    <a href="#container2">Search</a>
+                </ul>
+            </nav>
+        </div> 
+    </header>
+
+    <main class="wrapper">
+        <div id="shape">
+            <img id="logo" src="img/qfilme-logo.png" alt="qfilme-logo">
+            <img id="escadas" src="img/stairs.png" alt="escadas q filme">
+            <h2>suas recomendações de filme aqui.</h2>
+            <a href="#container1"><button id="random">SURPREENDA-ME</button></a>
+        </div>
+
+        <div class="container" id="container1">
+            <div class="search-container">
+                
+                <div id="result"></div>
+            </div>
+            <div class="item">
+                <div id="moviePoster1" class="shape"><img src="https://image.tmdb.org/t/p/w500/ku1UvTWYvhFQbSesOD6zteY7bXT.jpg" alt="the silence of the lambs" style="max-width:350px;"></div>
+                <div class="content">
+                    <h3>Bo Burnham: Inside</h3>
+                    <p>Com novas canções e comentários, Bo Burnham reflete sobre um ano incomum neste especial de comédia que ele escreveu, filmou e estrelou em isolamento.</p>
+                    <p id="imdbid">Imdb ID: tt0102926</p>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="container" id="container2">
+            <div class="search-container">
+                <input type="text" class="search-box" id="title-name" placeholder="Pesquisar...">
+                <button onclick="getMovies()" class="search-button">Buscar</button>
+                <div id="result"></div>
+            </div>
+            <div class="item">
+                <div id="imgSearch" class="shape"><img src="https://image.tmdb.org/t/p/w500/88MzkX0A05z9isFnExmkHx5e1Zq.jpg" alt="the silence of the lambs" style="max-width:350px;"></div>
+                <div class="content">
+                    <h3>O Silêncio dos Inocentes</h3>
+                    <p>Clarice Starling, uma das melhores estudantes da academia de treinamento do FBI. Jack Crawford quer que Clarice entreviste o Dr. Hannibal Lecter, um psiquiatra brilhante e também um psicopata violento, que cumpre prisão perpétua por vários atos de assassinato e canibalismo. Crawford acredita que Lecter pode ter uma visão em um caso e que Starling, como uma mulher jovem e atraente, pode ser a isca para atraí-lo.</p>
+                    <p id="imdbid">Imdb ID: tt0102926</p>
+                </div>
+            </div>
+        </div>
+      
+    </main>
+    <script src="js/main.js" defer></script>
+</body>
+</html>
